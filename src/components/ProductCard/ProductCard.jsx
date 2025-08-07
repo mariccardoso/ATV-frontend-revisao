@@ -13,11 +13,13 @@ const ProductCard = ({ product }) => {
           style={{
             width: "100%",
             height: "100%",
+            objectFit:"cover",
+            
           }}
         />
       </div>
       <div className={styles.producttitle}>{product.title}</div>
-      <div className={styles.productprice}>R$ {product.price}</div>
+      <div className={styles.productprice}>{product.price}</div>
       <div className={styles.productdescription}>{product.description}</div>
       <div className={styles.productrating}>
         <span className={styles.stars}>⭐⭐⭐⭐⭐</span>
